@@ -30,7 +30,7 @@ export class Header implements OnInit {
     this.drawerTitle = title;
     this.drawerOpen = true;
 
-    // Dynamically change drawerItems based on header clicked
+    // Change drawer module when you clicked header item
     switch (title) {
       case 'Purchase':
         this.drawerItems = [

@@ -1,5 +1,5 @@
 <div class="flex h-screen transition-all duration-300"
-     [class.ml-64]="drawerOpen"> <!-- shift whole app when drawer opens -->
+     [class.ml-64]="drawerOpen"> <!-- when drawer opens, shift header items -->
 
   <!-- Drawer -->
   <div *ngIf="drawerOpen"
@@ -16,16 +16,14 @@
       </div>
     </div>
   </div>
+  
 
-  <!-- Main content area (header + body) -->
   <div class="flex flex-col flex-1">
     <!-- Header -->
-    <p-menubar [model]="items" styleClass="!bg-blue-300 shadow-md">
-
-</p-menubar>
-
-
-
+    <p-menubar 
+      [model]="items" 
+      styleClass="!bg-blue-300 shadow-md">
+    </p-menubar>
 
     <!-- Page Content -->
     <div class="flex-1 p-6 bg-gray-200 overflow-auto">
